@@ -26,14 +26,14 @@ function onDeviceReady(){
    var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
    function onSuccess(position){
 	   
-	   alert('Latitude:'    + position.coords.latitude    +'/n'+
-	     'longitude:'       + position.coords.longitude   +'/n'+
-		 'Altitude:'       + position.coords.altitude  +'/n'+
-		 'Accuracy:'        + position.coords.accuracy   +'/n'+
-		 'Altitude Accuracy:'+ position.coords.altitudeAccuracy +'/n'+
-		 'Heading:'         + position.coords.heading      +'/n'+
-		 'Speed:'          + position.coords.speed        +'/n'+
-		 'Timestamp:'       + position.timestamp           +'/n');
+	   alert('latitud:'    + position.coords.latitude    +'/n'+
+	     'longitud:'       + position.coords.longitude   +'/n'+
+		 'altitud:'       + position.coords.altitude  +'/n'+
+		 'accuracy:'        + position.coords.accuracy   +'/n'+
+		 'altitude accuracy:'+ position.coords.altitudeAccuracy +'/n'+
+		 'heading:'         + position.coords.heading      +'/n'+
+		 'speed:'          + position.coords.speed        +'/n'+
+		 'timestamp:'       + position.timestamp           +'/n');
    };
    
    function onError(error){
